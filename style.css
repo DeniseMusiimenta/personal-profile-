@@ -1,0 +1,112 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+body { 
+    background-color: #03ffb8;
+color: hsl(0, 29%, 6%);
+line-height: 2;
+}
+
+/* Header */
+header{
+    text-align: center;
+    background:lch(57.26% 104.1 332.61) ;
+    line-height: 2;
+    padding: 20px;
+}
+
+header .profile img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    position: absolute;
+    left: 20px;
+}
+nav ul {
+    list-style: circle;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: rgb(159, 248, 5);
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+    text-decoration-color: oklch(77.911% 0.16694 71.479);
+    text-overflow: clip;
+    text-decoration-thickness: calc();
+}
+
+/*section*/
+main{
+    padding: 20px;
+}
+section {
+    background: hsla(180, 20%, 97%, 0.39);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align:center;
+    margin-bottom: 15px;
+    color:rgb(24, 22, 24);
+
+}
+
+/*schools Grid*/
+.school-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.school-card {
+    background: #c31d9f;
+    border-radius:15px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Hobbies*/
+#hobbies ul {
+    list-style: square;
+    padding-left: 40px;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    padding: 15px;
+    background: hsl(56, 89%, 42%);
+    color: rgb(192, 12, 24);
+}
+
+/*responsive tweaks*/
+@media (max-width:600px){
+    nav ul{flex-direction: column;
+        gap: 10px;
+    }
+
+    header.profile img{
+        width: 80px;
+        height: 80px;
+    }
+}
